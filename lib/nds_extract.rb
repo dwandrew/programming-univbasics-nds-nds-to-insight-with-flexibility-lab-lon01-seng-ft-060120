@@ -44,7 +44,7 @@ other_movies= []
     updated_movies.push(brian)
     index+=1
   end
-p updated_movies
+#p updated_movies
 #p other_movies
 return updated_movies
 end
@@ -75,7 +75,7 @@ else gross_hash.store(collection[index][:studio], collection[index][:worldwide_g
 end
 index+=1
 end
-p gross_hash
+#p gross_hash
 gross_hash
 end
 
@@ -98,7 +98,7 @@ directors_movies = []
 while i<source.length
   inner=0
   while inner<source[i][:movies].length
-    directors_movies.push([:title => source[i][:movies][inner][:title], :director_name => source[i][:name]])
+    directors_movies.push([:title => source[i][:movies][inner][:title], :director_name => source[i][:name], :worldwide_gross => source[i][:worldwide_gross], :studio => source[i][:studio]])
     inner+=1
   end
   i+=1;

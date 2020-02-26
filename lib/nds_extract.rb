@@ -66,11 +66,11 @@ end
 
 def gross_per_studio(collection)
 index = 0
-gross_array = {}
+gross_array = []
 while index<collection.length
 if gross_array.has_value?(collection[index][:studio])
   gross_array[collection[index][:studio]] += collection[index][:worldwide_gross]
-else gross_array = {collection[index][:studio] => collection[index][:worldwide_gross]}
+else gross_array.push{collection[index][:studio] => collection[index][:worldwide_gross]}
 end
 index+=1
 end

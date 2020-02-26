@@ -74,7 +74,7 @@ else gross_array = {collection[index][:studio] => collection[index][:worldwide_g
 end
 index+=1
 end
-gross_array
+p gross_array
 end
 
 

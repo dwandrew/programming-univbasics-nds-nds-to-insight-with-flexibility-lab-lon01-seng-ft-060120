@@ -65,6 +65,7 @@ end
   # movie_with_director_name method
 
 def gross_per_studio(collection)
+index = 0
 
 end
 

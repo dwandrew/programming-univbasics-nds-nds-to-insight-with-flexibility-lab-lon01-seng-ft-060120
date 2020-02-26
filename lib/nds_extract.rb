@@ -44,7 +44,7 @@ other_movies= []
     updated_movies.push(brian)
     index+=1
   end
-#p updated_movies
+p updated_movies
 #p other_movies
 return updated_movies
 end

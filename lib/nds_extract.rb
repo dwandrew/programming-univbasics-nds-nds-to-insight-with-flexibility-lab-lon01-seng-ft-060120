@@ -68,7 +68,7 @@ def gross_per_studio(collection)
 index = 0
 gross_array = {}
 while index<collection.length
-if gross_array
+if gross_array.has_value
 index+=1
 end
 end

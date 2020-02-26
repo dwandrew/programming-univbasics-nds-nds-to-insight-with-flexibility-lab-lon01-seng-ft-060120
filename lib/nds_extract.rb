@@ -98,7 +98,7 @@ directors_movies = []
 while i<source.length
   inner=0
   while inner<source[i][:movies].length
-    directors_movies.push([:title => source[i][:movies][inner][:title], :director_name => source[i][:name])
+    directors_movies.push([:title => source[i][:movies][inner][:title], :director_name => source[i][:name]])
     inner+=1
   end
   i+=1;

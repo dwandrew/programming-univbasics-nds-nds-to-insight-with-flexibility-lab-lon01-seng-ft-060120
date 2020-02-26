@@ -107,7 +107,7 @@ end
 return directors_movies
 end  
 
-
+#, :worldwide_gross => source[i][:worldwide_gross]]
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
   # INPUT:

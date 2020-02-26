@@ -76,6 +76,7 @@ end
 index+=1
 end
 p gross_hash
+gross_hash
 end
 
 

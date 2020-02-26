@@ -70,6 +70,7 @@ gross_array = {}
 while index<collection.length
 if gross_array.has_value?(collection[index][:studio])
   gross_array[collection[index][:studio]] += collection[index][:worldwide_gross]
+else gross_array = collection
 index+=1
 end
 end

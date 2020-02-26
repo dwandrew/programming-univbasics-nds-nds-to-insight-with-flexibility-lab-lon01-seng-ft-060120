@@ -69,7 +69,7 @@ index = 0
 gross_array = []
 while index<collection.length
 if gross_array.include?(collection[index][:studio])
-  gross_array.index
+  gross_array.index()
   gross_array[collection[index][:studio]] += collection[index][:worldwide_gross]
 else gross_array.push(collection[index][:studio] => collection[index][:worldwide_gross])
 end

@@ -71,11 +71,11 @@ while index<collection.length
 studio_name = collection[index][:studio]
 if gross_hash.has_key?(studio_name)
    gross_hash[studio_name] += collection[index][:worldwide_gross]
-else gross_hash.store(collection[index][:studio] => collection[index][:worldwide_gross])
+else gross_hash.store(collection[index][:studio], collection[index][:worldwide_gross])
 end
 index+=1
 end
-p gross_array
+p gross_hash
 end
 
 

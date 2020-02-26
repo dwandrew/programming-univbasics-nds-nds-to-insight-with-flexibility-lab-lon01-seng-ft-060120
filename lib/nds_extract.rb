@@ -65,17 +65,6 @@ end
   # movie_with_director_name method
 
 def gross_per_studio(collection)
-studio_index = 0
-studio_name = []
-
-  while studio_index< collection.length do
-    studio_title = {:studio => collection[studio_index][:studio], :gross => collection[studio_index][:worldwide_gross]}
-    studio_name.push(studio_title)
-        studio_index +=1 
-  end
-#p studio_name
-
-return studio_name.group_by{|hash| hash[:studio]}.transform_values {|array| array.map{|hash| hash[:gross]}.sum}
 
 end
 
@@ -133,3 +122,19 @@ def studios_totals(nds)
     
     return gross_per_studio(movies_with_director_names)
 end
+
+
+
+
+
+#studio_index = 0
+#studio_name = []
+
+  #while studio_index< collection.length do
+    #studio_title = {:studio => collection[studio_index][:studio], :gross => collection[studio_index][:worldwide_gross]}
+   # studio_name.push(studio_title)
+     #   studio_index +=1 
+  #end
+#p studio_name
+
+#return studio_name.group_by{|hash| hash[:studio]}.transform_values {|array| array.map{|hash| hash[:gross]}.sum}
